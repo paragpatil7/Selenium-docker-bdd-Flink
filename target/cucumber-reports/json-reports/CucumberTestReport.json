@@ -1,0 +1,140 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 31176039300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherShopperSteps.setupDriver()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "I want to do Weather Shopping",
+        "description": "",
+        "id": "weather-shopper;i-want-to-do-weather-shopping;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2027004800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WeatherShopperSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14065248800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the website Weather Shopper",
+            "match": {
+              "location": "WeatherShopperSteps.launchSite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6144204100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Select shopping type for Moisturizers or Sunscreens depends on Current temperature",
+            "match": {
+              "location": "WeatherShopperSteps.navigateToCurrentTemperature()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12340562800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Select least expensive two Product and add it to the cart",
+            "match": {
+              "location": "WeatherShopperSteps.addProducttoCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5644908100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify that the added product are correct",
+            "match": {
+              "location": "WeatherShopperSteps.verifyCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5597800500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out payment details \"Test@Test.com\",\"4000000000000077\",\"1123\",\"123\" and submit the form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test@Test.com",
+                  "offset": 28
+                },
+                {
+                  "val": "4000000000000077",
+                  "offset": 44
+                },
+                {
+                  "val": "1123",
+                  "offset": 63
+                },
+                {
+                  "val": "123",
+                  "offset": 70
+                }
+              ],
+              "location": "WeatherShopperSteps.i_fill_out_payment_details_and_submit_the_form(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6669611900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify that the Payment is Successfull",
+            "match": {
+              "location": "WeatherShopperSteps.i_verify_that_the_Payment_is_Successfull()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Weather Shopper",
+    "description": "",
+    "id": "weather-shopper",
+    "keyword": "Feature",
+    "uri": "WeatherShopper.feature"
+  }
+]
